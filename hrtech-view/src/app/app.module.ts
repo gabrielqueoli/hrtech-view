@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { BarraNavegacaoComponent } from './view/barra-navegacao/barra-navegacao.component';
 
 import { PaginaEntradaComponent } from './view/pagina-entrada/pagina-entrada.component';
+import { PaginaHoleriteComponent } from './view/pagina-holerite/pagina-holerite.component';
 
 @NgModule({
   declarations: [	
     AppComponent,
     BarraNavegacaoComponent,
-      PaginaEntradaComponent
+      PaginaEntradaComponent,
+      PaginaHoleriteComponent
    ],
   imports: [
     BrowserModule,

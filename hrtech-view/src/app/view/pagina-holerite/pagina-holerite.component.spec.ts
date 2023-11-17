@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PaginaEntradaComponent } from './pagina-entrada.component';
+import { PaginaHoleriteComponent } from './pagina-holerite.component';
 
-describe('PaginaEntradaComponent', () => {
-  let component: PaginaEntradaComponent;
-  let fixture: ComponentFixture<PaginaEntradaComponent>;
+describe('PaginaHoleriteComponent', () => {
+  let component: PaginaHoleriteComponent;
+  let fixture: ComponentFixture<PaginaHoleriteComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PaginaEntradaComponent ]
+      declarations: [ PaginaHoleriteComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(PaginaEntradaComponent);
+    fixture = TestBed.createComponent(PaginaHoleriteComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
