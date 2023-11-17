@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PaginaEntradaComponent } from './pagina-entrada.component';
+import { TelaHoleritesComponent } from './tela-holerites.component';
 
-describe('PaginaEntradaComponent', () => {
-  let component: PaginaEntradaComponent;
-  let fixture: ComponentFixture<PaginaEntradaComponent>;
+describe('TelaHoleritesComponent', () => {
+  let component: TelaHoleritesComponent;
+  let fixture: ComponentFixture<TelaHoleritesComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PaginaEntradaComponent ]
+      declarations: [ TelaHoleritesComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(PaginaEntradaComponent);
+    fixture = TestBed.createComponent(TelaHoleritesComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

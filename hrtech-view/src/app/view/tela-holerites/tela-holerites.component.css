@@ -1,0 +1,93 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.holerite-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.calendario-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.mes {
+    background-color: #F4F4F4;
+    color: #000000;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.mes:hover {
+    background-color: #BBBBBB;
+}
+
+.botoes-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.acao {
+    padding: 5px;
+    color: #2173EF;
+    cursor: pointer;
+}
+
+.acao:hover {
+    text-decoration: underline;
+}
+
+#visualizarHolerites {
+    background-color: #BDD0FC;
+    color: #3F15EA;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#gerarPDF {
+    background-color: #FCC8BD;
+    color: #EA1515;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.acao-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
