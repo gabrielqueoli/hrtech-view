@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BarraNavegacaoComponent } from './view/barra-navegacao/barra-navegacao.component';
 import { PerfilUsuarioComponent } from './view/perfil-usuario/perfil-usuario.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { PerfilUsuarioComponent } from './view/perfil-usuario/perfil-usuario.com
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
