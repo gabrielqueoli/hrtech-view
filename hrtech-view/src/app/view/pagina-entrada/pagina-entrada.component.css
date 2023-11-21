@@ -17,6 +17,22 @@ body {
     background: #FFFFFF;
 }
 
+.logo-container {
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logo {
+    width: 200px; 
+    height: auto;
+}
+
+.login-container {
+    position: relative;
+}
+
 .login {
     border: 1px solid #000000; 
     padding: 35px; 
@@ -218,6 +234,14 @@ body {
     font-size: 16px;
 }
 
+.logo-cadastro {
+    position: absolute;
+    top: -80px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+}
+
 .btn-cadastrar {
     position: relative;
     display: inline-block;
@@ -256,7 +280,7 @@ body {
 
 .popup-content {
     position: absolute;
-    top: 200px; 
+    top: 700px; 
     left: 50%;
     transform: translateX(-50%);
     background: #4CAF50; 

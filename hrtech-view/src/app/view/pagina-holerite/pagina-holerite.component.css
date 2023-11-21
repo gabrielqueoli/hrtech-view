@@ -41,6 +41,8 @@ select {
     text-align: center;
     cursor: pointer;
     border-radius: 5px;
+    border: 1px solid #ddd; 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
 .mes:hover {
@@ -51,7 +53,7 @@ select {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .acao {
@@ -90,3 +92,10 @@ select {
     justify-content: space-between;
     margin-bottom: 20px;
 }
+
+.mes.selecionado {
+    background-color: #BBBBBB;
+    color: #000000;
+  }
+  
+  

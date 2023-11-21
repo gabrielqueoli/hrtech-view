@@ -16,30 +16,21 @@
         </select>
 
         <div class="calendario-container">
-            <div class="mes janeiro" data-mes="janeiro">Janeiro</div>
-            <div class="mes fevereiro" data-mes="fevereiro">Fevereiro</div>
-            <div class="mes marco" data-mes="marco">Março</div>
-            <div class="mes abril" data-mes="abril">Abril</div>
-            <div class="mes maio" data-mes="maio">Maio</div>
-            <div class="mes junho" data-mes="junho">Junho</div>
-            <div class="mes julho" data-mes="julho">Julho</div>
-            <div class="mes agosto" data-mes="agosto">Agosto</div>
-            <div class="mes setembro" data-mes="setembro">Setembro</div>
-            <div class="mes outubro" data-mes="outubro">Outubro</div>
-            <div class="mes novembro" data-mes="novembro">Novembro</div>
-            <div class="mes dezembro" data-mes="dezembro">Dezembro</div>
+            <div *ngFor="let mes of meses" class="mes" [class.selecionado]="mesesSelecionados.includes(mes)" (click)="selecionarMes(mes)" [attr.data-mes]="mes.toLowerCase()">{{ mes }}</div>
         </div>
 
         <div class="botoes-container">
-            <div id="limparSelecao" class="acao">Limpar Seleção</div>
-            <div id="selecionarTudo" class="acao">Selecionar Tudo</div>
+<div id="limparSelecao" class="acao" (click)="limparSelecao()">Limpar Seleção</div>
+
+            <div id="selecionarTudo" class="acao" (click)="selecionarTodos()">Selecionar Tudo</div>
         </div>
 
         <div class="meses-selecionados">
+            <div *ngFor="let mes of mesesSelecionados">{{ mes }}</div>
         </div>
 
         <button id="visualizarHolerites">Visualizar Holerite(s)</button>
-<button id="gerarPDF">Gerar PDF</button>
+        <button id="gerarPDF">Gerar PDF</button>
     </div>
 
     <script src="script.js"></script>

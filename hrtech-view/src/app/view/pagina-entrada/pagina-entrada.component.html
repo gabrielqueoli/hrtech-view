@@ -3,45 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=628">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="pagina-entrada.component.css">
     <title>HRTech</title>
 </head>
 <body>
-    <form class="login">
-        <h2>Login</h2>
-        <div class="box-user">
-            <input type="text" name="" required>
-            <label>Usuário</label>
-        </div>
-        <div class="box-password">
-            <div class="password-container">
-                <input type="password" id="passwordField" required>
-                <label for="passwordField" id="passwordLabel">Senha</label>
-                <button id="togglePassword" type="button">
-                    <img id="eyeIcon" src="https://cdn-icons-png.flaticon.com/128/709/709612.png" alt="Mostrar Senha">
-                </button>
+    <div class="logo-container">
+        <img src="assets/logo_HRTech.png" alt="Logo HRTech" class="logo">
+    </div>
+
+    <div class="login-container">
+        <form class="login">
+            <h2>Login</h2>
+            <div class="box-user">
+                <input type="text" name="" required>
+                <label>Usuário</label>
             </div>
-        </div>
-        <div>
-            <a href="#" class="forget" id="cadastroLink">
+            <div class="box-password">
+                <div class="password-container">
+                    <input type="password" id="passwordField" required>
+                    <label for="passwordField" id="passwordLabel">Senha</label>
+                    <button id="togglePassword" type="button">
+                        <img id="eyeIcon" src="https://cdn-icons-png.flaticon.com/128/709/709612.png" alt="Mostrar Senha">
+                    </button>
+                </div>
+            </div>
+            <div>
+                <a href="#" class="forget" id="cadastroLink">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Novo usuário
+                </a>
+            </div>
+            <a href="#" class="btn">
                 <span></span>
                 <span></span>
                 <span></span>
                 <span></span>
-                Novo usuário
+                Entrar
             </a>
-        </div>
-        <a href="#" class="btn">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            Entrar
-        </a>
-    </form>
+        </form>
+    </div>
 
     <div id="cadastroForm" class="cadastro-form">
+        <img src="assets/logo_HRTech.png" alt="Logo HRTech" class="logo-cadastro">
         <h2>Cadastro</h2>
         <div class="box">
             <label for="cadastroNome">Usuário:</label>
