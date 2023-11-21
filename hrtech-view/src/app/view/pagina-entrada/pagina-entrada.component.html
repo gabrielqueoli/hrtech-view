@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=628">
+    <link rel="stylesheet" href="pagina-entrada.component.css">
+    <title>HRTech</title>
+</head>
+<body>
+    <form class="login">
+        <h2>Login</h2>
+        <div class="box-user">
+            <input type="text" name="" required>
+            <label>Usuário</label>
+        </div>
+        <div class="box-password">
+            <div class="password-container">
+                <input type="password" id="passwordField" required>
+                <label for="passwordField" id="passwordLabel">Senha</label>
+                <button id="togglePassword" type="button">
+                    <img id="eyeIcon" src="https://cdn-icons-png.flaticon.com/128/709/709612.png" alt="Mostrar Senha">
+                </button>
+            </div>
+        </div>
+        <div>
+            <a href="#" class="forget" id="cadastroLink">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Novo usuário
+            </a>
+        </div>
+        <a href="#" class="btn">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Entrar
+        </a>
+    </form>
+
+    <div id="cadastroForm" class="cadastro-form">
+        <h2>Cadastro</h2>
+        <div class="box">
+            <label for="cadastroNome">Usuário:</label>
+            <input type="text" id="cadastroNome" name="cadastroNome" required placeholder="Usuário que será utilizado no login">
+        </div>
+        <div class="box">
+            <label for="cadastroCpfCnpj">CPF/CNPJ:</label>
+            <input type="text" id="cadastroCpfCnpj" name="cadastroCpfCnpj" required pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}" placeholder="123.456.789-01">
+        </div>
+        <div class="box">
+            <label for="cadastroEmail">E-mail:</label>
+            <input type="email" id="cadastroEmail" name="cadastroEmail" required placeholder="email@exemplo.com.br">
+        </div>
+        <div class="box">
+            <label for="cadastroContato">Contato:</label>
+            <input type="text" id="cadastroContato" name="cadastroContato" required pattern="\([0-9]{2}\) [0-9]{4,5}-[0-9]{4}" placeholder="(XX) XXXXX-XXXX">
+        </div>
+        <div class="box">
+            <label for="cadastroSenha">Senha:</label>
+            <input type="password" id="cadastroSenha" name="cadastroSenha" required placeholder="******">
+        </div>
+        <a href="#" class="btn-cadastrar" onclick="validarCadastro()">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Cadastrar
+        </a>
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <p>Cadastro realizado com sucesso!</p>
+        </div>
+    </div>
+
+    <script src="pagina-entrada.component.js"></script>
+</body>
+</html>

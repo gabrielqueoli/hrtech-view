@@ -7,12 +7,17 @@ import { BarraNavegacaoComponent } from './view/barra-navegacao/barra-navegacao.
 import { PerfilUsuarioComponent } from './view/perfil-usuario/perfil-usuario.component';
 import { ReactiveFormsModule } from '@angular/forms';
 
+import { PaginaEntradaComponent } from './view/pagina-entrada/pagina-entrada.component';
+import { PaginaHoleriteComponent } from './view/pagina-holerite/pagina-holerite.component';
+
 @NgModule({
-  declarations: [
+  declarations: [	
     AppComponent,
     BarraNavegacaoComponent,
-    PerfilUsuarioComponent
-  ],
+      PaginaEntradaComponent,
+      PaginaHoleriteComponent,
+      PerfilUsuarioComponent
+   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
