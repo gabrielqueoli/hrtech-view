@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,8 +7,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./pagina-entrada.component.css']
 })
 export class PaginaEntradaComponent implements OnInit {
-
-  constructor() { }
 
   ngOnInit() {
     const loginForm = document.querySelector('.login') as HTMLFormElement;
@@ -64,7 +63,7 @@ export class PaginaEntradaComponent implements OnInit {
         }
       });
     });
-    
+
     const fecharPopup = () => {
       popup.style.display = 'none';
     };
@@ -119,5 +118,30 @@ export class PaginaEntradaComponent implements OnInit {
       event.preventDefault();
       validarCadastro();
     });
+  }
+
+  usuario: string;
+  senha: string;
+
+  constructor(private http: HttpClient) { }
+
+  togglePassword() {
+  }
+
+  login() {
+    // Aqui você fará a solicitação à API para autenticar o usuário
+    const apiUrl = 'https://hrtech-api-production.up.railway.app/'; 
+    const credentials = { usuario: this.usuario, senha: this.senha };
+
+    this.http.post(apiUrl, credentials).subscribe(
+      (response) => {
+        // Lógica para lidar com a resposta da API após o login bem-sucedido
+        console.log('Login bem-sucedido', response);
+      },
+      (error) => {
+        // Lógica para lidar com erros de login
+        console.error('Erro no login', error);
+      }
+    );
   }
 }
